@@ -9,7 +9,7 @@ const arr5 = []
 const arrayArithmeticAverage = array => array.reduce((reduced, element) => element = reduced + element
     , 0) / array.length
 
-const arrayMedian = array => {
+const arrayMedian = (...array) => {
     return (
         array.length === 0
             ? 0
@@ -21,7 +21,7 @@ const arrayMedian = array => {
     )
 }
 
-const arraySmallestNumber = array => {
+const arraySmallestNumber = (...array) => {
     return (
         array.length === 0
             ? 0
@@ -29,7 +29,7 @@ const arraySmallestNumber = array => {
     )
 }
 
-const arrayBiggestNumber = array => {
+const arrayBiggestNumber = (...array) => {
     return (
         array.length === 0
             ? 0
